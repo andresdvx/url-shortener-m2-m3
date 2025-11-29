@@ -1,0 +1,8 @@
+# Ejemplo de variables para Terraform
+# Copia este archivo como terraform.tfvars y ajusta los valores
+
+aws_region           = "us-east-1"
+dynamodb_table_name  = "url_shortener"
+api_gateway_id       = "j1vf39simh"
+api_gateway_name     = "url-shortener-module1-api"
+environment          = "dev"
