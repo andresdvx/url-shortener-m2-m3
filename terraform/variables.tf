@@ -21,17 +21,3 @@ variable "environment" {
   type        = string
   default     = "dev"
 }
-
-variable "aws_access_key" {
-  description = "AWS Access Key ID para autenticación"
-  type        = string
-  sensitive   = true
-  default     = ""
-}
-
-variable "aws_secret_key" {
-  description = "AWS Secret Access Key para autenticación"
-  type        = string
-  sensitive   = true
-  default     = ""
-}
