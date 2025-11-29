@@ -71,6 +71,13 @@ jobs:
         working-directory: ./module3-stats
         run: npm install --production
 
+      - name: Create Lambda ZIP packages
+        run: |
+          cd module2-redirect
+          zip -r ../terraform/lambda_redirect_package.zip . -x "*.git*"
+          cd ../module3-stats
+          zip -r ../terraform/lambda_stats_package.zip . -x "*.git*"
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
