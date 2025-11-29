@@ -65,11 +65,11 @@ jobs:
 
       - name: Install dependencies - Module 2
         working-directory: ./module2-redirect
-        run: npm ci --production
+        run: npm install --production
 
       - name: Install dependencies - Module 3
         working-directory: ./module3-stats
-        run: npm ci --production
+        run: npm install --production
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
